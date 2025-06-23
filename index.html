@@ -45,6 +45,7 @@
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
                 <div id="quiz-header" class="flex justify-between items-center mb-4">
                      <h3 id="quiz-title" class="text-xl font-bold text-blue-800"></h3>
+                     <span id="question-counter" class="text-lg font-bold text-gray-600"></span>
                      <button onclick="showView('quiz-menu')" class="text-sm bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded-lg">العودة للقائمة</button>
                 </div>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
@@ -281,7 +282,8 @@
                     { question: "أي من هذه التطبيقات هو الأنسب لجدولة الاجتماعات وإرسال الدعوات؟", options: ["Word", "Excel", "Outlook", "OneNote"], correctAnswer: 2 },
                     { question: "ما هي البنية التحتية التي تعتمد عليها تطبيقات أوفيس أونلاين؟", options: ["الحوسبة المحلية", "الحوسبة السحابية", "شبكة نظير لنظير (P2P)", "لا شيء مما سبق"], correctAnswer: 1 },
                     { question: "هل يمكن استخدام تطبيقات أوفيس أونلاين على جهاز Chromebook؟", options: ["لا، لأنه ليس ويندوز", "نعم، لأنها تعمل عبر المتصفح", "فقط وورد أونلاين", "فقط إذا قمت بتثبيت برنامج خاص"], correctAnswer: 1 },
-                    { question: "الخلاصة النهائية في الملخص تنصح باستخدام أوفيس 365 لـ:", options: ["الذين يعملون بشكل فردي فقط", "الذين لا يحبون التكنولوجيا", "الذين يحتاجون للعمل عن بعد والتعاون", "الذين يفضلون الشراء لمرة واحدة"], correctAnswer: 2 }
+                    { question: "الخلاصة النهائية في الملخص تنصح باستخدام أوفيس 365 لـ:", options: ["الذين يعملون بشكل فردي فقط", "الذين لا يحبون التكنولوجيا", "الذين يحتاجون للعمل عن بعد والتعاون", "الذين يفضلون الشراء لمرة واحدة"], correctAnswer: 2 },
+                    { question: "ميزة إضافة تعليقات على الشرائح تعتبر أداة لـ:", options: ["التنسيق", "التعاون", "الحساب", "الرسم"], correctAnswer: 1 }
                 ]
             },
             // Chapter 4: 100 Questions
@@ -347,7 +349,6 @@
                     { question: "ما هو الأمر المستخدم لإنشاء نسخة طبق الأصل من القيم في خلية أو أكثر؟", options: ["قص", "نسخ", "لصق", "حذف"], correctAnswer: 1 },
                     { question: "عندما تقوم بإدراج عمود جديد، أين يظهر؟", options: ["على يسار العمود المحدد", "على يمين العمود المحدد", "في نهاية ورقة العمل", "في بداية ورقة العمل"], correctAnswer: 0 },
                     { question: "الرمز (مسافة) في الصيغ مثل (A1:B2 B1:C2) يستخدم لتعريف:", options: ["الاتحاد", "النطاق", "التقاطع", "لا شيء"], correctAnswer: 2 },
-                    // 40 Additional Genius Level Questions
                     { question: "ما هو الفرق بين المرجع النسبي (A1) والمرجع المطلق ($A$1)؟", options: ["لا يوجد فرق", "المطلق يتغير عند النسخ، النسبي لا يتغير", "النسبي يتغير عند النسخ، المطلق يظل ثابتاً", "كلاهما لا يتغير عند النسخ"], correctAnswer: 2 },
                     { question: "في الصيغة =SUM(A1:A5)، إذا قمت بحذف الصف رقم 3، ماذا ستصبح الصيغة؟", options: ["=SUM(A1:A4)", "=SUM(A1:A5)", "=SUM(A1:A3,A5)", "ستظهر رسالة خطأ #REF!"], correctAnswer: 0 },
                     { question: "أي دالة تستخدم لعد الخلايا التي تحتوي على أي نوع من البيانات (نص أو رقم)؟", options: ["COUNT", "COUNTA", "COUNTBLANK", "COUNTIF"], correctAnswer: 1 },
@@ -365,7 +366,7 @@
                     { question: "إذا كتبت =الآن() في خلية، ماذا ستعرض؟", options: ["التاريخ الحالي فقط", "الوقت الحالي فقط", "التاريخ والوقت الحاليين", "اسم اليوم"], correctAnswer: 2 },
                     { question: "لتكرار قيمة الخلية A1 في الخلية B1 بشكل دائم (مرجع مطلق)، تكتب في B1:", options: ["=A1", "=$A1", "=A$1", "=$A$1"], correctAnswer: 3 },
                     { question: "ما هو ناتج الصيغة =LEN(\"Excel 2021\")؟", options: ["10", "11", "9", "2"], correctAnswer: 0 },
-                    { question: "ماذا يحدث عند الضغط على Ctrl + ` (Grave Accent)؟", options: ["يحفظ الملف", "يطبع الملف", "يظهر الصيغ بدلاً من النتائج في الخلايا", "يغلق Excel"], correctAnswer: 2 },
+                    { question: "ماذا يحدث عند الضغط على Ctrl + \` (Grave Accent)؟", options: ["يحفظ الملف", "يطبع الملف", "يظهر الصيغ بدلاً من النتائج في الخلايا", "يغلق Excel"], correctAnswer: 2 },
                     { question: "رسالة الخطأ #N/A تظهر عادة مع دوال:", options: ["الجمع (SUM)", "العد (COUNT)", "البحث (VLOOKUP)", "الشرط (IF)"], correctAnswer: 2 },
                     { question: "ما هو الفرق بين دالة ROUND ودالة TRUNC؟", options: ["لا يوجد فرق", "ROUND تقرب، TRUNC تقطع الكسر العشري", "TRUNC تقرب، ROUND تقطع", "كلاهما يحذف الكسر العشري"], correctAnswer: 1 },
                     { question: "للحصول على المتوسط الحسابي للقيم في A1:A10 التي تطابق الشرط 'مبيعات' في B1:B10، نستخدم:", options: ["AVERAGE", "AVERAGEIF", "SUMIF", "COUNTIF"], correctAnswer: 1 },
@@ -387,10 +388,11 @@
                     { question: "ما هو ناتج الصيغة =OR(5>10, 20=20)؟", options: ["TRUE", "FALSE", "خطأ", "20"], correctAnswer: 0 },
                     { question: "عندما تقوم 'بتقسيم' (Split) الشاشة، تحصل على:", options: ["أوراق عمل جديدة", "ملفات جديدة", "أجزاء تمرير مستقلة لنفس الورقة", "نسخة من الملف"], correctAnswer: 2 },
                     { question: "ما هو الاختصار لتحديد صف بأكمله؟", options: ["النقر على رأس الصف", "Ctrl + Spacebar", "Shift + Spacebar", "كلاهما A و C"], correctAnswer: 3 },
-                    { question: "ما هو ناتج الصيغة =AND(10>5, 4<3)؟", options: ["TRUE", "FALSE", "خطأ", "10"], correctAnswer: 1 }
+                    { question: "ما هو ناتج الصيغة =AND(10>5, 4<3)؟", options: ["TRUE", "FALSE", "خطأ", "10"], correctAnswer: 1 },
+                    { question: "أي من الخيارات التالية يسمح لك بعرض البيانات التي تطابق معايير معينة وإخفاء الباقي؟", options: ["الفرز (Sort)", "التصفية (Filter)", "التحقق من الصحة (Validation)", "التنسيق الشرطي (Conditional Formatting)"], correctAnswer: 1 }
                 ]
             },
-             // Chapter 5: 60 Questions
+            // Chapter 5: 60 Questions
             {
                 title: "التحول الرقمي والتكنولوجيا الخضراء",
                 questions: [
@@ -451,7 +453,9 @@
                     { question: "ماذا تتطلب معالجة 'البيانات الكبيرة'؟", options: ["أدوات بسيطة مثل Excel", "تقنيات وأدوات متقدمة للتحليل", "ورقة وقلم", "لا تتطلب معالجة"], correctAnswer: 1 },
                     { question: "الهدف النهائي للتحول الرقمي هو:", options: ["تغيير من أجل التغيير", "تحقيق قيمة مضافة للعملاء والمؤسسة", "العودة إلى الطرق القديمة", "تقليل استخدام التكنولوجيا"], correctAnswer: 1 },
                     { question: "أي من هذه الإجراءات يساهم في تحقيق أهداف التكنولوجيا الخضراء؟", options: ["شراء أجهزة جديدة كل عام", "ترك الأجهزة تعمل طوال الوقت", "إعادة تدوير الأجهزة القديمة", "رمي البطاريات في القمامة العادية"], correctAnswer: 2 },
-                    { question: "ضبط العمليات الداخلية والخارجية لتحقيق الأهداف هو تعريف لـ:", options: ["الحوكمة", "الابتكار", "التسويق", "الإنتاج"], correctAnswer: 0 }
+                    { question: "ضبط العمليات الداخلية والخارجية لتحقيق الأهداف هو تعريف لـ:", options: ["الحوكمة", "الابتكار", "التسويق", "الإنتاج"], correctAnswer: 0 },
+                    { question: "أي من هذه التقنيات هو الأقل ارتباطًا مباشرًا بالتكنولوجيا الخضراء؟", options: ["إعادة التدوير", "الواقع الافتراضي", "الطاقة المتجددة", "تصميم المباني الخضراء"], correctAnswer: 1 },
+                    { question: "زيادة الإنتاجية وتحسين الكفاءة هما من الفوائد الرئيسية لـ:", options: ["التحول الرقمي", "التكنولوجيا الخضراء", "كلاهما", "لا شيء مما سبق"], correctAnswer: 2 }
                 ]
             }
         ];
@@ -475,6 +479,7 @@
             
             if (!forceReset) {
                 const progress = loadProgress(chapterIdx);
+                // Check if progress exists and is not for a completed quiz
                 if (progress && progress.currentQuestionIndex < quizData[chapterIdx].questions.length) {
                     currentChapterIndex = chapterIdx;
                     currentQuestionIndex = progress.currentQuestionIndex;
@@ -566,12 +571,13 @@
         }
 
         function handleNextQuestion() {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < quizData[currentChapterIndex].questions.length) {
-                saveProgress();
-                loadQuestion();
+            // Only increment question index if it's not the last question
+            if (currentQuestionIndex < quizData[currentChapterIndex].questions.length -1) {
+                currentQuestionIndex++;
+                 saveProgress();
+                 loadQuestion();
             } else {
-                showResults();
+                 showResults();
             }
         }
         
@@ -630,6 +636,7 @@
             let allProgress = JSON.parse(localStorage.getItem('quizProgress')) || {};
             delete allProgress[chapterIdx];
             localStorage.setItem('quizProgress', JSON.stringify(allProgress));
+            updateMenuButtons();
         }
 
         function updateMenuButtons() {
@@ -641,7 +648,7 @@
                      if(i === 3) { 
                         baseTitle = "الفصل الرابع: Excel";
                     }
-                    if (allProgress[i] && allProgress[i].currentQuestionIndex > 0 && allProgress[i].currentQuestionIndex < quizData[i].questions.length) {
+                    if (allProgress[i] && allProgress[i].currentQuestionIndex < quizData[i].questions.length) {
                          button.innerHTML = `${baseTitle} <span class="text-sm font-normal block">(إكمال الاختبار)</span>`;
                     } else {
                          button.textContent = baseTitle;
@@ -657,4 +664,4 @@
 
     </script>
 </body>
-</ht
+</html>
