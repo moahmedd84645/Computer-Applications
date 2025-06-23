@@ -34,7 +34,7 @@
                     <button onclick="startQuiz(0)" class="text-lg font-bold p-6 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-lg transition-transform transform hover:scale-105">الفصل الأول: ميكنة العمل</button>
                     <button onclick="startQuiz(1)" class="text-lg font-bold p-6 bg-green-100 hover:bg-green-200 text-green-800 rounded-lg transition-transform transform hover:scale-105">الفصل الثاني: MS Office</button>
                     <button onclick="startQuiz(2)" class="text-lg font-bold p-6 bg-red-100 hover:bg-red-200 text-red-800 rounded-lg transition-transform transform hover:scale-105">الفصل الثالث: Office Online</button>
-                    <button onclick="startQuiz(3)" class="text-lg font-bold p-6 bg-purple-100 hover:bg-purple-200 text-purple-800 rounded-lg transition-transform transform hover:scale-105">الفصل الرابع: Excel</button>
+                    <button onclick="startQuiz(3)" class="text-lg font-bold p-6 bg-purple-100 hover:bg-purple-200 text-purple-800 rounded-lg transition-transform transform hover:scale-105 ring-4 ring-purple-400">الفصل الرابع: Excel (مُركَّز)</button>
                     <button onclick="startQuiz(4)" class="text-lg font-bold p-6 bg-indigo-100 hover:bg-indigo-200 text-indigo-800 rounded-lg transition-transform transform hover:scale-105">التحول الرقمي</button>
                 </div>
             </div>
@@ -108,7 +108,6 @@
                     { question: "البريد الإلكتروني (E-mail) هو مثال على:", options: ["نظام فرعي للمعالجة", "نظام فرعي للاتصالات", "نظام فرعي للتخزين", "نظام فرعي للتحليل"], correctAnswer: 1 },
                     { question: "تخفيض التكاليف وزيادة السرعة في الإنجاز هما من فوائد:", options: ["النظام المتكامل", "العمل اليدوي", "البيروقراطية", "اللامركزية"], correctAnswer: 0 },
                     { question: "برنامج PowerPoint يستخدم لـ:", options: ["كتابة التقارير", "إدارة قواعد البيانات", "إنشاء العروض التقديمية", "تحليل البيانات المالية"], correctAnswer: 2 },
-                    // Add 45 more questions for chapter 1
                     { question: "مجموعة الموظفين باختلاف درجاتهم الإدارية تمثل أي عنصر من عناصر المكتب؟", options: ["العنصر البشري", "الأدوات والتقنيات", "البيانات والمعلومات", "المعالجة"], correctAnswer: 0 },
                     { question: "العمليات الخاصة بجمع وتحليل وتشغيل المعلومات لتزويد الإدارة العليا بالبيانات اللازمة لاتخاذ القرارات هي تعريف لـ:", options: ["الأعمال المكتبية", "إدارة المشاريع", "خدمة العملاء", "العلاقات العامة"], correctAnswer: 0 },
                     { question: "وظائف الإدارة المكتبية تشمل:", options: ["التخطيط، التنظيم، التوجيه", "الإنتاج، التوزيع، التسويق", "البيع، الشراء، التخزين", "البرمجة، التصميم، الاختبار"], correctAnswer: 0 },
@@ -174,7 +173,6 @@
                     { question: "واجهة 'المترو' (Metro UI) مرتبطة بـ:", options: ["Windows 7", "Windows 8", "macOS", "Linux"], correctAnswer: 1 },
                     { question: "إمكانية إدراج صور من الإنترنت مباشرة عبر محرك بحث Bing هي ميزة في:", options: ["أوفيس 2003", "أوفيس 2007", "أوفيس 2013", "جميع ما سبق"], correctAnswer: 2 },
                     { question: "أي من التالي لا يعتبر من مميزات أوفيس 2013؟", options: ["تصميم واجهة جديد", "التكامل مع OneDrive", "دعم الشاشات التي تعمل باللمس", "يتطلب شراء إصدار جديد للحصول على التحديثات"], correctAnswer: 3 },
-                    // Add 45 more questions
                     { question: "ما هو الهدف الرئيسي من تطوير إصدارات أوفيس الجديدة مثل 2013 و 365؟", options: ["الحفاظ على نفس الميزات القديمة", "تحسين الإنتاجية وتجربة المستخدم", "زيادة تعقيد البرامج", "تقليل عدد البرامج في الحزمة"], correctAnswer: 1 },
                     { question: "شاشة البداية المطورة في أوفيس 2013 تهدف إلى:", options: ["عرض الإعلانات فقط", "تخصيص القوالب والوصول السريع للمستندات", "تشغيل الألعاب", "عرض حالة الطقس"], correctAnswer: 1 },
                     { question: "ميزة Web App تتيح للمستخدم:", options: ["فتح الملفات دون تثبيت أوفيس", "تسريع أداء الحاسوب", "زيادة مساحة القرص الصلب", "تحديث نظام التشغيل"], correctAnswer: 0 },
@@ -239,7 +237,6 @@
                     { question: "حفظ العروض التقديمية على OneDrive وفتحها على أي جهاز هي ميزة لـ:", options: ["إكسيل أونلاين", "باوربوينت أونلاين", "وورد أونلاين", "Outlook أونلاين"], correctAnswer: 1 },
                     { question: "إنشاء جداول بيانات مع معادلات تلقائية هي الوظيفة الأساسية لـ:", options: ["وورد أونلاين", "إكسيل أونلاين", "باوربوينت أونلاين", "Teams"], correctAnswer: 1 },
                     { question: "مشاركة المصنفات مع فريق العمل تعني أن:", options: ["شخص واحد فقط يمكنه التعديل", "يمكن لعدة أشخاص التعديل في نفس الوقت", "الملف للقراءة فقط", "الملف يتم إرساله عبر البريد"], correctAnswer: 1 },
-                    // Add 45 more questions
                     { question: "ما هو الشرط الأساسي لتطبيقات أوفيس أونلاين لتعمل؟", options: ["وجود حزمة أوفيس مثبتة", "متصفح إنترنت واتصال", "نظام تشغيل ويندوز فقط", "شاشة لمس"], correctAnswer: 1 },
                     { question: "أي تطبيق يستخدم لإدارة المواعيد والاجتماعات؟", options: ["OneNote", "Outlook", "Word", "Excel"], correctAnswer: 1 },
                     { question: "عندما تقوم بإجراء تعديل في مستند على وورد أونلاين، أين يتم الحفظ؟", options: ["على القرص الصلب تلقائيا", "على OneDrive تلقائيا", "يجب الضغط على زر الحفظ يدويا", "لا يتم الحفظ"], correctAnswer: 1 },
@@ -286,7 +283,7 @@
                     { question: "الخلاصة النهائية في الملخص تنصح باستخدام أوفيس 365 لـ:", options: ["الذين يعملون بشكل فردي فقط", "الذين لا يحبون التكنولوجيا", "الذين يحتاجون للعمل عن بعد والتعاون", "الذين يفضلون الشراء لمرة واحدة"], correctAnswer: 2 }
                 ]
             },
-            // Chapter 4: 60 Questions
+            // Chapter 4: 100 Questions
             {
                 title: "الفصل الرابع: مقدمة عن برنامج Excel",
                 questions: [
@@ -305,7 +302,6 @@
                     { question: "ماذا تفعل ميزة 'تجميد الأجزاء' (Freeze Panes)؟", options: ["تحذف الأجزاء المحددة", "تخفي الأجزاء المحددة", "تجعل أجزاء من الورقة ثابتة عند التمرير", "تدمج الأجزاء المحددة"], correctAnswer: 2 },
                     { question: "أي من التالي يمثل مرجع نطاق (Range) صحيح؟", options: ["A1,B10", "A1-B10", "A1:B10", "A1 B10"], correctAnswer: 2 },
                     { question: "الدالة IF تعتبر دالة:", options: ["حسابية", "نصية", "منطقية (شرطية)", "بحث"], correctAnswer: 2 },
-                    // Add 45 more questions
                     { question: "الاسم Excel مشتق من كلمة Excellence وتعني:", options: ["السرعة", "السهولة", "التميز", "الدقة"], correctAnswer: 2 },
                     { question: "البيانات مثل 'أحمد' أو 'Riyadh' تعتبر بيانات:", options: ["عددية", "نصية", "تاريخ", "عملة"], correctAnswer: 1 },
                     { question: "أي شريط في واجهة Excel يعرض محتوى الخلية النشطة أو الصيغة؟", options: ["شريط العنوان", "شريط الأدوات السريع", "شريط الصيغة", "شريط الحالة"], correctAnswer: 2 },
@@ -349,7 +345,48 @@
                     { question: "أين يظهر اسم الملف المفتوح حاليًا؟", options: ["شريط الصيغة", "شريط العنوان", "شريط الحالة", "ورقة العمل"], correctAnswer: 1 },
                     { question: "ما هو الأمر المستخدم لإنشاء نسخة طبق الأصل من القيم في خلية أو أكثر؟", options: ["قص", "نسخ", "لصق", "حذف"], correctAnswer: 1 },
                     { question: "عندما تقوم بإدراج عمود جديد، أين يظهر؟", options: ["على يسار العمود المحدد", "على يمين العمود المحدد", "في نهاية ورقة العمل", "في بداية ورقة العمل"], correctAnswer: 0 },
-                    { question: "الرمز (مسافة) في الصيغ مثل (A1:B2 B1:C2) يستخدم لتعريف:", options: ["الاتحاد", "النطاق", "التقاطع", "لا شيء"], correctAnswer: 2 }
+                    { question: "الرمز (مسافة) في الصيغ مثل (A1:B2 B1:C2) يستخدم لتعريف:", options: ["الاتحاد", "النطاق", "التقاطع", "لا شيء"], correctAnswer: 2 },
+                    // 40 Additional Genius Level Questions
+                    { question: "ما هو الفرق بين المرجع النسبي (A1) والمرجع المطلق ($A$1)؟", options: ["لا يوجد فرق", "المطلق يتغير عند النسخ، النسبي لا يتغير", "النسبي يتغير عند النسخ، المطلق يظل ثابتاً", "كلاهما لا يتغير عند النسخ"], correctAnswer: 2 },
+                    { question: "في الصيغة =SUM(A1:A5)، إذا قمت بحذف الصف رقم 3، ماذا ستصبح الصيغة؟", options: ["=SUM(A1:A4)", "=SUM(A1:A5)", "=SUM(A1:A3,A5)", "ستظهر رسالة خطأ #REF!"], correctAnswer: 0 },
+                    { question: "أي دالة تستخدم لعد الخلايا التي تحتوي على أي نوع من البيانات (نص أو رقم)؟", options: ["COUNT", "COUNTA", "COUNTBLANK", "COUNTIF"], correctAnswer: 1 },
+                    { question: "إذا كانت A1=50، ما هي نتيجة الصيغة =IF(A1>80, \"ممتاز\", IF(A1>49, \"جيد\", \"ضعيف\"))؟", options: ["ممتاز", "جيد", "ضعيف", "خطأ"], correctAnswer: 1 },
+                    { question: "ما هو المرجع الذي يثبت العمود فقط ويترك الصف يتغير؟", options: ["A1", "$A1", "A$1", "$A$1"], correctAnswer: 1 },
+                    { question: "لجمع القيم في النطاق A1:A10 التي تزيد عن 100 فقط، نستخدم الدالة:", options: ["SUM", "IF", "SUMIF", "COUNTIF"], correctAnswer: 2 },
+                    { question: "نتيجة الصيغة =(5+3)*2^2 هي:", options: ["32", "64", "28", "40"], correctAnswer: 0 },
+                    { question: "إذا قمت بتطبيق 'تجميد الأجزاء' والخلية النشطة هي C3، أي الصفوف والأعمدة سيتم تجميدها؟", options: ["الصف 1 و 2 والعمود A و B", "الصف 3 والعمود C", "الصف 1 و 2 فقط", "العمود A و B فقط"], correctAnswer: 0 },
+                    { question: "ما هي وظيفة الدالة COUNTA(A1:A10) إذا كان النطاق يحتوي على 5 أرقام و 3 خلايا نصية وخليتان فارغتان؟", options: ["5", "3", "8", "10"], correctAnswer: 2 },
+                    { question: "أي من التالي لا يعتبر من أنواع المراجع في Excel؟", options: ["نسبي", "مطلق", "مختلط", "دائري"], correctAnswer: 3 },
+                    { question: "إذا كانت A1=\"Excel\" و B1=\" جيد\"، فما نتيجة الصيغة =A1&B1؟", options: ["Excel جيد", "Excelجيد", "خطأ #VALUE!", "Excel + جيد"], correctAnswer: 1 },
+                    { question: "الدالة التي تبحث عن قيمة في عمود وتعيد قيمة من عمود آخر في نفس الصف هي:", options: ["LOOKUP", "VLOOKUP", "HLOOKUP", "INDEX"], correctAnswer: 1 },
+                    { question: "عند إدخال '1/5' في خلية، كيف يتعامل معها Excel افتراضياً؟", options: ["كنص", "كرقم عشري (0.2)", "كتاريخ (5 يناير)", "كرقم كسري"], correctAnswer: 2 },
+                    { question: "ماذا تفعل الصيغة =COUNTIF(A1:A10, \">50\")؟", options: ["تجمع الخلايا الأكبر من 50", "تعد الخلايا الأكبر من 50", "تعطي متوسط الخلايا الأكبر من 50", "تعطي خطأ"], correctAnswer: 1 },
+                    { question: "إذا كتبت =الآن() في خلية، ماذا ستعرض؟", options: ["التاريخ الحالي فقط", "الوقت الحالي فقط", "التاريخ والوقت الحاليين", "اسم اليوم"], correctAnswer: 2 },
+                    { question: "لتكرار قيمة الخلية A1 في الخلية B1 بشكل دائم (مرجع مطلق)، تكتب في B1:", options: ["=A1", "=$A1", "=A$1", "=$A$1"], correctAnswer: 3 },
+                    { question: "ما هو ناتج الصيغة =LEN(\"Excel 2021\")؟", options: ["10", "11", "9", "2"], correctAnswer: 0 },
+                    { question: "ماذا يحدث عند الضغط على Ctrl + ` (Grave Accent)؟", options: ["يحفظ الملف", "يطبع الملف", "يظهر الصيغ بدلاً من النتائج في الخلايا", "يغلق Excel"], correctAnswer: 2 },
+                    { question: "رسالة الخطأ #N/A تظهر عادة مع دوال:", options: ["الجمع (SUM)", "العد (COUNT)", "البحث (VLOOKUP)", "الشرط (IF)"], correctAnswer: 2 },
+                    { question: "ما هو الفرق بين دالة ROUND ودالة TRUNC؟", options: ["لا يوجد فرق", "ROUND تقرب، TRUNC تقطع الكسر العشري", "TRUNC تقرب، ROUND تقطع", "كلاهما يحذف الكسر العشري"], correctAnswer: 1 },
+                    { question: "للحصول على المتوسط الحسابي للقيم في A1:A10 التي تطابق الشرط 'مبيعات' في B1:B10، نستخدم:", options: ["AVERAGE", "AVERAGEIF", "SUMIF", "COUNTIF"], correctAnswer: 1 },
+                    { question: "إذا قمت بنسخ خلية تحتوي على الصيغة =A1+B1 من C1 إلى C2، ماذا ستصبح الصيغة في C2؟", options: ["=A1+B1", "=A2+B2", "=A1+B2", "=A2+B1"], correctAnswer: 1 },
+                    { question: "ماذا تفعل الدالة COUNTBLANK(A1:A10)؟", options: ["تعد كل الخلايا", "تعد الخلايا التي بها بيانات", "تعد الخلايا الفارغة فقط", "تعد الخلايا التي بها أرقام"], correctAnswer: 2 },
+                    { question: "ما هو ناتج الصيغة =\"السعر \" & 100 & \" ريال\"؟", options: ["السعر 100 ريال", "خطأ", "السعر100ريال", "100"], correctAnswer: 2 },
+                    { question: "لتحديد كل خلايا ورقة العمل، نضغط على:", options: ["Ctrl + A", "Ctrl + C", "Ctrl + V", "Ctrl + X"], correctAnswer: 0 },
+                    { question: "أي رمز يستخدم للمرجع المختلط الذي يثبت الصف فقط؟", options: ["$A1", "A$1", "$A$1", "A1"], correctAnswer: 1 },
+                    { question: "ماذا تعني الصيغة =SUM(Sheet2!A1:A10)؟", options: ["تجمع خلايا في ورقة العمل الحالية", "تجمع خلايا في ورقة عمل اسمها Sheet2", "تجمع خلايا في ملف آخر", "صيغة خاطئة"], correctAnswer: 1 },
+                    { question: "للحصول على 3 أحرف من بداية النص في الخلية A1، نستخدم:", options: ["=RIGHT(A1,3)", "=MID(A1,1,3)", "=LEFT(A1,3)", "كلاهما B و C صحيح"], correctAnswer: 3 },
+                    { question: "عندما تحتوي صيغة على مرجع لنفس الخلية التي توجد بها، يسمى هذا:", options: ["مرجع خارجي", "مرجع نسبي", "مرجع دائري", "مرجع مطلق"], correctAnswer: 2 },
+                    { question: "ما هو الاختصار الذي يكرر آخر إجراء قمت به؟", options: ["Ctrl+Z", "Ctrl+Y", "F4", "F5"], correctAnswer: 2 },
+                    { question: "لجمع القيم في النطاقات A1:A5 و C1:C5 معًا، الصيغة الصحيحة هي:", options: ["=SUM(A1:A5,C1:C5)", "=SUM(A1:C5)", "=SUM(A1:A5+C1:C5)", "=SUM(A1,C1:C5)"], correctAnswer: 0 },
+                    { question: "ماذا تفعل ميزة 'إزالة التكرارات' (Remove Duplicates)؟", options: ["تخفي الصفوف المكررة", "تحذف الصفوف التي تحتوي على قيم مكررة", "تنسق الصفوف المكررة بلون مختلف", "لا تفعل شيئاً"], correctAnswer: 1 },
+                    { question: "إذا كانت الخلية A1 تحتوي على الرقم 123.456، فماذا ستعرض الصيغة =ROUND(A1, 1)؟", options: ["123.5", "123.4", "123", "123.46"], correctAnswer: 0 },
+                    { question: "لتطبيق نفس التنسيق على خلايا متعددة غير متجاورة، نستخدم:", options: ["الفرشاة", "نسخ التنسيق", "التعبئة التلقائية", "القص واللصق"], correctAnswer: 1 },
+                    { question: "ما هو الاختصار لتحديد عمود بأكمله؟", options: ["النقر على رأس العمود", "Ctrl + Spacebar", "Shift + Spacebar", "كلاهما A و B"], correctAnswer: 3 },
+                    { question: "الدالة التي تحول النص إلى أحرف كبيرة (Capital) هي:", options: ["UPPER", "LOWER", "PROPER", "CAPITAL"], correctAnswer: 0 },
+                    { question: "ما هو ناتج الصيغة =OR(5>10, 20=20)؟", options: ["TRUE", "FALSE", "خطأ", "20"], correctAnswer: 0 },
+                    { question: "عندما تقوم 'بتقسيم' (Split) الشاشة، تحصل على:", options: ["أوراق عمل جديدة", "ملفات جديدة", "أجزاء تمرير مستقلة لنفس الورقة", "نسخة من الملف"], correctAnswer: 2 },
+                    { question: "ما هو الاختصار لتحديد صف بأكمله؟", options: ["النقر على رأس الصف", "Ctrl + Spacebar", "Shift + Spacebar", "كلاهما A و C"], correctAnswer: 3 },
+                    { question: "ما هو ناتج الصيغة =AND(10>5, 4<3)؟", options: ["TRUE", "FALSE", "خطأ", "10"], correctAnswer: 1 }
                 ]
             },
              // Chapter 5: 60 Questions
@@ -371,7 +408,6 @@
                     { question: "ما هي الخطوة الأولى في عملية التحول الرقمي؟", options: ["شراء الأجهزة", "بناء استراتيجية رقمية", "توظيف موظفين جدد", "إدارة التغيير"], correctAnswer: 1 },
                     { question: "تطوير تكنولوجيا النانو الخضراء هي إحدى استراتيجيات:", options: ["التكنولوجيا الخضراء", "البيانات الكبيرة", "الحوسبة السحابية", "الذكاء الاصطناعي"], correctAnswer: 0 },
                     { question: "تحسين جودة الخدمات المقدمة للمستفيدين هو من:", options: ["عوائق التحول الرقمي", "فوائد التحول الرقمي", "سلبيات التكنولوجيا الخضراء", "أسباب مقاومة التغيير"], correctAnswer: 1 },
-                    // Add 45 more questions
                     { question: "أي من التالي يمثل فائدة لإنترنت الأشياء (IoT)؟", options: ["تقليل كفاءة العمليات", "زيادة التكاليف التشغيلية", "زيادة المرونة في العمل", "تقليل البيانات المتاحة"], correctAnswer: 2 },
                     { question: "مخاوف أمن المعلومات تعتبر من ______ التحول الرقمي.", options: ["الفوائد", "الأهداف", "العوائق", "النتائج الإيجابية"], correctAnswer: 2 },
                     { question: "استخدام مصادر الطاقة المتجددة مثل الطاقة الشمسية هو مثال على:", options: ["التكنولوجيا الخضراء", "البيانات الكبيرة", "الواقع الافتراضي", "الحوسبة السحابية"], correctAnswer: 0 },
