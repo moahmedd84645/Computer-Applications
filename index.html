@@ -503,6 +503,14 @@
         function loadQuestion() {
             document.getElementById('next-btn').style.display = 'none';
             const questionData = quizData[currentChapterIndex].questions[currentQuestionIndex];
+
+            // Defensive check to prevent crash on invalid question index
+            if (!questionData) {
+                console.error("Invalid question index:", currentQuestionIndex, "for chapter:", currentChapterIndex);
+                // Attempt to show results with current state or go to menu
+                showResults();
+                return;
+            }
             
             // Update progress bar and counter
             const progress = ((currentQuestionIndex + 1) / quizData[currentChapterIndex].questions.length) * 100;
@@ -513,14 +521,38 @@
             document.getElementById('question-text').textContent = questionData.question;
             const optionsContainer = document.getElementById('options-container');
             optionsContainer.innerHTML = '';
+            
+            const previouslyAnsweredIndex = userAnswers[currentQuestionIndex];
+            const hasBeenAnswered = previouslyAnsweredIndex !== undefined;
+
             questionData.options.forEach((option, index) => {
                 const optionEl = document.createElement('button');
                 optionEl.className = 'option w-full p-4 text-right text-lg border-2 border-gray-300 rounded-lg hover:bg-gray-100 hover:border-blue-500';
                 optionEl.textContent = option;
-                optionEl.onclick = () => selectAnswer(index, optionEl, questionData.correctAnswer);
+                
+                if (!hasBeenAnswered) {
+                    optionEl.onclick = () => selectAnswer(index, optionEl, questionData.correctAnswer);
+                }
+                
                 optionsContainer.appendChild(optionEl);
             });
+
+            if (hasBeenAnswered) {
+                const correctIndex = questionData.correctAnswer;
+                const options = optionsContainer.querySelectorAll('.option');
+
+                options.forEach(opt => opt.classList.add('disabled'));
+
+                if (previouslyAnsweredIndex === correctIndex) {
+                    options[previouslyAnsweredIndex].classList.add('correct');
+                } else {
+                    options[previouslyAnsweredIndex].classList.add('incorrect');
+                    options[correctIndex].classList.add('correct');
+                }
+                document.getElementById('next-btn').style.display = 'block';
+            }
         }
+
 
         function selectAnswer(selectedIndex, selectedButton, correctIndex) {
             userAnswers[currentQuestionIndex] = selectedIndex;
